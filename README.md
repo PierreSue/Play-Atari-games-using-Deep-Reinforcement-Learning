@@ -53,11 +53,13 @@ If "--do_render" is adopted in the command, the code can not only generate the t
 ### 1. Policy Gradient
 
 * Algorithm
+
     <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/PG-Alg.png" width="50%" height="50%"> 
 
     I first used PolicyNet to get the probability from the current state, and used torch.distributions.Categorical to sample an action from the probability. Then, by discounting the saved loss and using the loss function shown above, the model can update the parameters of the PolicyNet.
 
 * Learning Curve
+
     <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/pg.png" width="50%" height="50%"> 
 
 ### 2. DQN
@@ -87,6 +89,7 @@ If "--do_render" is adopted in the command, the code can not only generate the t
     As for the original model, the result is not bad by the way, but there are still better models for this task. As for the Exploration_H model, it doesn’t work well because it doesn’t take too much the PolicyNet model prediction into account. As for the Exploration_L model, it works surprisingly well here, and I think the reason here is that exploration is rather less necessary for this task because Assault is quite a straight- forward task. And as for the Exploration_M model, little change in epsilon (nearly 0.5) makes fluctuations at the training step, which directly influences the average reward at testing step.
 
 * Other Q-learning Algorithm
+
      Double DQN
 
     <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/Double-DQN-Alg.png" width="50%" height="50%">
@@ -95,7 +98,7 @@ If "--do_render" is adopted in the command, the code can not only generate the t
 
      Dueling DQN
 
-    <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/Dueling-DQN-Alg.png" width="50%" height="50%">
+    <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/Dueling-DQN-Alg.png" width="30%" height="30%">
 
     The advantage of dueling-dqn is that it decomposes Q-function into advantage and value function, which avoids the network being overoptimistic. Otherwise it will cause actual DQN and to get as optimistic as it explodes.
 
@@ -107,7 +110,7 @@ If "--do_render" is adopted in the command, the code can not only generate the t
 
 * Algorithm
 
-    <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/A2C-Alg.png" width="50%" height="50%"> 
+    <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/A2C-Alg.png" width="80%" height="80%"> 
 
     I use A2C(policy gradient along with dqn) in my implementation. TD and entropy regularization are used here, but I don’t use RNN in this A2C model.
 
