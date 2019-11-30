@@ -50,7 +50,7 @@ If "--do_render" is adopted in the command, the code can not only generate the t
 * `$ python3 mario_plot.py`
 
 ## Results
-1. Policy Gradient
+### 1. Policy Gradient
 
 * Algorithm
     <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/PG-Alg.png"> 
@@ -60,7 +60,7 @@ If "--do_render" is adopted in the command, the code can not only generate the t
 * Learning Curve
     <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/pg.png"> 
 
-2. DQN
+### 2. DQN
 
 * Algorithm
     <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/DQN-Alg.png"> 
@@ -72,10 +72,10 @@ If "--do_render" is adopted in the command, the code can not only generate the t
 
 * Hyper-parameter Tuning
 
-     Original:Exploration epsilon = 1.0 – 0.01 ; gamma = 0.99
-     Exploration_H:Exploration epsilon = 1.0 – 0.7 ; gamma = 0.99
-     Exploration_L:Exploration epsilon = 0.3 – 0.01 ; gamma = 0.99
-     Exploration_M:Exploration epsilon = 0.3 – 0.7 ; gamma = 0.99
+     Original:Exploration epsilon = 1.0 – 0.01 ; gamma = 0.99 \\
+     Exploration_H:Exploration epsilon = 1.0 – 0.7 ; gamma = 0.99 \\
+     Exploration_L:Exploration epsilon = 0.3 – 0.01 ; gamma = 0.99 \\
+     Exploration_M:Exploration epsilon = 0.3 – 0.7 ; gamma = 0.99 \\
 
     <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/dqn-4.png">
 
