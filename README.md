@@ -1,5 +1,7 @@
 # Play Atari games using Deep Reinforcement Learning
 
+Implement an agent to play Atari games using Deep Reinforcement Learning In this project, I implemented Policy Gradient, Deep Q-Learning (DQN), Double DQN, Dueling DQN, and A2C for the atari games, such as LunarLander, Assault, and Mario.
+
 ## Atari Game
 Atari Game    |    LunarLander  |     Assault    | SuperMarioBros |
 --------------|:------------:|:--------------------:|:-----------:|
