@@ -54,7 +54,7 @@ If "--do_render" is adopted in the command, the code can not only generate the t
 
 * Algorithm
 
-    <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/PG-Alg.png" width="50%" height="50%"> 
+    <img src="https://github.com/PierreSue/Play-Atari-games-using-Deep-Reinforcement-Learning/blob/master/plot/PG-Alg.png" width="50%" height="30%"> 
 
     I first used PolicyNet to get the probability from the current state, and used torch.distributions.Categorical to sample an action from the probability. Then, by discounting the saved loss and using the loss function shown above, the model can update the parameters of the PolicyNet.
 
